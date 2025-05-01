@@ -37,6 +37,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    public void upSalary(int index) {
+        this.salary *= index;
+    }
+
     @Override
     public String toString() {
         return "ФИО " + fullName + ", место работы: " + placeWork + ", зарплата: " + salary + ", id: " + id;

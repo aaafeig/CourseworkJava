@@ -1,7 +1,20 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     private static final Employee[] employees = new Employee[10];
+
+    public static void upSalary(int index) {
+        for (Employee employee : employees) {
+            employee.upSalary(index);
+        }
+    }
+
+    public static void infoAboutPlace(int place) {
+        for (Employee employee : employees) {
+            if (place == employee.getId()) {
+
+            }
+
+        }
+    }
 
     public static  void getEmployee(Employee[] employees) {
         for (Employee employee : employees) {
@@ -68,5 +81,8 @@ public class Main {
      System.out.println(findMax(employees));
      System.out.println(avgSalary(employees));
      printFullName(employees);
+     upSalary(2);
+     System.out.println(employees[0].getSalary());
+     System.out.println(employees[1].getSalary());
     }
 }
